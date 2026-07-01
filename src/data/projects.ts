@@ -14,60 +14,59 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    name: "Shrtn",
-    imgSrc: "/projects/shrtn.png",
+    name: "Travel Agency Platform",
+    imgSrc: "/projects/ats1.png",
     description:
-      "Shorten your links, track every click. See who's visiting — by browser, OS, and date. Built for speed with Redis-backed redirects.",
+      "Travel management platform that enables users to discover, customize, and book travel experiences while providing administrators with complete control over the platform.",
     about:
-      "A full-stack URL shortening service built for real deployment. Paste a long URL, get a short link at shrtn.fun. Behind the scenes, every redirect hits Redis first — falling back to PostgreSQL only on a cache miss. Click analytics track browser, OS, and date breakdowns per link. Auth is stateless JWT with full OTP email verification and forgot/reset password flow via Resend.",
+      "A comprehensive full-stack travel agency platform built to simplify travel planning and reservation management. The application allows users to explore trips, sports activities, hotels, featured destinations, and personalized travel experiences while offering a seamless booking process. It also includes a powerful administration dashboard for managing reservations, partner accounts, promotional discounts, travel programs, and overall platform content, delivering an efficient and scalable solution for both customers and administrators.",
     features: [
-      "Base62 short code generation from PostgreSQL auto-increment IDs — no collisions, no randomness needed",
-      "Redis cache-aside on redirect path — zero DB queries on cache hit, 24h TTL",
-      "Click analytics per link: Browser breakdown, OS breakdown, click timeline, last 5 clicks",
-      "JWT authentication with OTP email verification via Resend (noreply@shrtn.fun)",
-      "Enable/disable toggle per link with immediate Redis cache eviction",
-      "25 URLs per user, 30-day auto-expiry, grouped click counts in a single JPQL query",
-      "User-Agent parsing via uap-java — browser and OS extracted at write time, aggregated at read time",
-      "Analytics responses cached in Redis and evicted on every new click — always fresh without polling",
-      "Deployed across Render (Docker) and Vercel with custom domain shrtn.fun",
+      "Browse and book trips, sports activities, and hotel reservations.",
+      "Explore featured destinations, travel programs, and best-selling offers.",
+      "Explore featured destinations, travel programs, and best-selling offers.",
+      "Partner account management with dedicated administration tools.",
+      "Promotional discounts and offers management.",
+      "Comprehensive admin dashboard for managing events, bookings, users, partners, and platform content.",
+      "Cloudinary integration for secure image upload and media management.",
+      "RESTful API development and testing with Postman.",
+     
     ],
     techStack: [
       projectTech.react,
       projectTech.typescript,
       projectTech.tailwindcss,
-      projectTech.shadcnui,
-      projectTech.springboot,
-      projectTech.postgresql,
-      projectTech.redis,
+   
       projectTech.jwt,
-      projectTech.docker,
+      projectTech.nodejs,
+      projectTech.mongodb,
+      projectTech.jwt,
+  
     ],
     liveLink: "https://app.shrtn.fun",
     githubLink: "https://github.com/CharanMunur/shrtn",
   },
   {
-    name: "Markdown Editor",
-    imgSrc: "/projects/markdowneditor.png",
+    name: "electric vehicle charging stations management",
+    imgSrc: "/projects/voltwise.jpeg",
     description:
-      "A Monaco-powered markdown editor with live GitHub-style preview, PDF export via Print.js, theme toggle, and optional sync scroll to keep both panes aligned.",
+      "A mobile platform for locating, reserving, and managing electric vehicle charging stations in real time.",
     about:
-      "A dual-pane workbench built for writing and previewing markdown in real time. It leverages Monaco Editor for syntax highlighting and code completion, with a live GitHub-styled preview on the right. Shipped with useful features like instant PDF export and synchronized scrolling.",
+      "This mobile application enables users to explore nearby electric vehicle charging stations on an interactive map, view detailed station information, and reserve a charging slot with a 30-minute timer. It also includes features for reviewing stations, tracking usage history, submitting feedback or complaints, and improving overall charging experience. Partners can manage their stations, while administrators have full control with advanced analytics dashboards.",
     features: [
-      "Monaco Editor with syntax highlighting and code completion",
-      "Live GitHub-styled markdown preview in the right pane",
-      "Sync scroll — preview stays aligned with the editor as you type",
-      "PDF export via Print.js with a single click",
-      "Copy entire content to clipboard",
-      "Dark and light theme toggle",
-      "Content persisted via localStorage across sessions",
-      "Bundled default markdown file for instant demo",
+      "Interactive map showing available charging stations with details for each stations.",
+      "30-minute reservation system with timer",
+      "Reservation history tracking",
+      "Rating and commenting system",
+      "Complaint submission system",
+      "Analytics (most used stations, top-rated stations, trends)",
+
     ],
     techStack: [
       projectTech.react,
       projectTech.javascript,
       projectTech.tailwindcss,
       projectTech.vite,
-      projectTech.monaco,
+      projectTech.reactnative,
     ],
     liveLink: "https://markdown-editor-v1.netlify.app/",
     githubLink: "https://github.com/CharanMunur/markdown-editor",
@@ -90,7 +89,7 @@ export const projects: Project[] = [
     techStack: [
       projectTech.nodejs,
       projectTech.typescript,
-      projectTech.ink,
+     
       projectTech.commander,
       projectTech.execa,
     ],

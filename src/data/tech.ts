@@ -9,9 +9,9 @@ export const skills: TechItem[] = [
   { name: "JavaScript", icon: "/tech/js.svg" },
   { name: "TypeScript", icon: "/tech/typescript.svg" },
   { name: "Tailwind CSS", icon: "/tech/tailwindcss.svg" },
-  { name: "Spring Boot", icon: "/tech/springboot.svg" },
-  { name: "Supabase", icon: "/tech/supabase.svg" },
-  { name: "Redis", icon: "/tech/redis.svg" },
+  { name: "NodeJs", icon: "/tech/nodejs-dark.svg" },
+  { name: "MongoDB", icon: "/tech/mongodb.png" },
+  { name: "Postgre", icon: "/tech/postgre.svg" },
 ];
 
 export const frontendSkills: TechItem[] = [
@@ -19,11 +19,7 @@ export const frontendSkills: TechItem[] = [
   { name: "TypeScript", icon: "/tech/typescript.svg" },
   { name: "JavaScript", icon: "/tech/js.svg" },
   { name: "Tailwind CSS", icon: "/tech/tailwindcss.svg" },
-  {
-    name: "shadcn/ui",
-    icon: "/tech/shadcn-ui-light.svg",
-    darkIcon: "/tech/shadcn-ui-dark.svg",
-  },
+
   { name: "Vite", icon: "/tech/vite.svg" },
   { name: "HTML5", icon: "/tech/html5.svg" },
   {
@@ -34,12 +30,12 @@ export const frontendSkills: TechItem[] = [
 ];
 
 export const backendSkills: TechItem[] = [
-  { name: "Java", icon: "/tech/java.svg" },
-  { name: "Spring Boot", icon: "/tech/springboot.svg" },
-  { name: "MySQL", icon: "/tech/mysql.svg" },
-  { name: "Supabase", icon: "/tech/supabase.svg" },
+  { name: "JavaScript", icon: "/tech/js.svg" },
+  { name: "NodeJs", icon: "/tech/nodejs-dark.svg" },
+  { name: "Express", icon: "/tech/express.png" },
+  { name: "MongoDb", icon: "/tech/mongodb.png" },
   { name: "PostgreSQL", icon: "/tech/postgre.svg" },
-  { name: "Redis", icon: "/tech/redis.svg" },
+ 
 ];
 
 export const toolsSkills: TechItem[] = [
@@ -49,16 +45,12 @@ export const toolsSkills: TechItem[] = [
     icon: "/social/github.svg",
     darkIcon: "/social/github-dark.svg",
   },
-  { name: "Maven", icon: "/tech/apachemaven.svg" },
-  { name: "Gradle", icon: "/tech/gradle.svg" },
-  { name: "Vercel", icon: "/tech/vercel-light.svg", darkIcon: "/tech/vercel-dark.svg" },
+  { name: "Postman", icon: "/tech/postman.png" },
+  { name: "Cloudinary", icon: "/tech/cloudinary.png" },
+ 
   { name: "Netlify", icon: "/tech/netlify.svg" },
-  {
-    name: "Bun",
-    icon: "/tech/bun.svg",
-    darkIcon: "/tech/bun-dark.svg",
-  },
-  { name: "Docker", icon: "/tech/docker.svg" },
+ 
+ 
   { name: "NPM", icon: "/tech/npm.svg" },
 ];
 
@@ -106,16 +98,16 @@ export const projectTech = {
     icon: "/tech/jwt-light.svg",
     darkIcon: "/tech/jwt-dark.svg",
   },
-  monaco: { name: "Monaco Editor", icon: "/tech/monaco.svg" },
+  reactnative: { name: "React Native", icon: "/tech/reactnative.png" },
   nodejs: {
     name: "Node.js",
     icon: "/tech/nodejs-light.svg",
     darkIcon: "/tech/nodejs-dark.svg",
   },
-  ink: {
-    name: "Ink",
-    icon: "/tech/ink-light.svg",
-    darkIcon: "/tech/ink-dark.svg",
+  mongodb: {
+    name: "MongoDb",
+    icon: "/tech/mongodb.png",
+    darkIcon: "/tech/mongodb.png",
   },
   commander: {
     name: "Commander.js",

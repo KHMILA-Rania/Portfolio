@@ -35,7 +35,7 @@ const Hero = () => {
           </div>
           <div className="flex h-full flex-col justify-center gap-2 sm:gap-3">
             <h1 className="flex items-center gap-1 text-right text-2xl font-light tracking-tight sm:text-2xl md:text-3xl">
-              Charan Munur
+              Rania KHMILA
               <span className="text-background">
                 <BadgeCheck color="currentColor" fill="#3b82f6" size={28} />
               </span>
@@ -84,8 +84,8 @@ const Hero = () => {
                 </span>
               ))}
             </span>{" "}
-            — with a keen eye for detail and responsiveness. Also exploring
-            blockchain out of curiosity.
+            — with a keen eye for detail and responsiveness. Able to analyze requirements, design suitable solutions, and work
+effectively in a team. Organized, detail-oriented, and equipped with strong analytical skills.
           </p>
 
           <div className="flex flex-wrap gap-3 sm:gap-4 pt-2">
@@ -98,7 +98,7 @@ const Hero = () => {
               </Button>
             </a>
             <a
-              href="https://drive.google.com/file/d/1AF0owusJPd1yf1vRwCJcaex04pnEVL_H/view?usp=sharing"
+              href="/_cv-inglese.pdf"
               target="_blank"
               rel="noreferrer"
             >
