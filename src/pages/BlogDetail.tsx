@@ -1,4 +1,4 @@
-import { blogs } from "@/data/blog";
+import { blogs } from "@/data/socielExp";
 import { ChevronLeft, Clock, Tag } from "lucide-react";
 import { useNavigate, useParams } from "react-router-dom";
 import Markdown from "react-markdown";
@@ -15,7 +15,7 @@ const BlogDetail = () => {
   if (!blog) {
     return (
       <div className="flex min-h-screen items-center justify-center text-xl text-muted-foreground">
-        Blog not found
+        content not found
       </div>
     );
   }
@@ -27,7 +27,7 @@ const BlogDetail = () => {
           onClick={() => navigate("/blogs")}
           className="flex w-fit items-center gap-3 text-md font-light tracking-tight text-muted-foreground cursor-pointer duration-200 hover:text-foreground"
         >
-          <ChevronLeft size={20} strokeWidth={2.25} /> Back to Blogs
+          <ChevronLeft size={20} strokeWidth={2.25} /> Back to experiences
         </button>
       </FadeIn>
 

@@ -1,5 +1,5 @@
 import BlogCard from "@/components/BlogCard";
-import { blogs } from "@/data/blog";
+import { blogs } from "@/data/socielExp";
 import { ChevronLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { FadeIn } from "@/components/helpers/FadeIn";
@@ -24,11 +24,10 @@ const Blog = () => {
         className="flex flex-col gap-2"
       >
         <h1 className="text-2xl font-light tracking-tight sm:text-3xl">
-          All Blogs
+          Social Experience 
         </h1>
         <p className="text-muted-foreground font-light text-lg">
-          Thoughts, write-ups, and explorations on design, development, and
-          everything in between.
+          Clubs , Associations , participation in social life 
         </p>
       </FadeIn>
       <div className="flex flex-col gap-4 mt-6">

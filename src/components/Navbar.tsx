@@ -1,4 +1,4 @@
-import { Menu, Moon, Sun, TvMinimal, X } from "lucide-react";
+import { Menu, Moon, Sun, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { Tabs, TabsList, TabsTrigger } from "./ui/tabs";
 import { useTheme } from "next-themes";
@@ -6,11 +6,11 @@ import { useState } from "react";
 
 const navItems = [
   { href: "/projects", label: "Projects" },
-  { href: "/blogs", label: "Blogs" },
+  { href: "/blogs", label: "Social Experience" },
 ];
 
 const themes = [
-  { theme: "system", icon: TvMinimal },
+ // { theme: "system", icon: TvMinimal },
   { theme: "light", icon: Sun },
   { theme: "dark", icon: Moon },
 ];
@@ -31,7 +31,7 @@ const Navbar = () => {
           onClick={() => setIsOpen(false)}
           className="shrink-0 text-lg font-light tracking-normal text-foreground sm:text-xl hover:opacity-80 transition-opacity"
         >
-          @charanmunur
+          @Rania KHMILA
         </Link>
 
         {/* Desktop Nav */}

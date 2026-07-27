@@ -14,6 +14,7 @@ import ScrollToTop from "./components/helpers/ScrollToTop.tsx";
 import BlogDetail from "./pages/BlogDetail.tsx";
 import SmoothScroll from "./components/helpers/SmoothScroll.tsx";
 import Footer from "./components/Footer.tsx";
+import DemoUnavailable from "./components/demo-unavailable.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -36,6 +37,7 @@ createRoot(document.getElementById("root")!).render(
                 <Route path="/projects/:slug" element={<ProjectDetail />} />
                 <Route path="/blogs/:slug" element={<BlogDetail />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/demo-unavailable" element={<DemoUnavailable />} />
               </Routes>
             </div>
             <Footer />

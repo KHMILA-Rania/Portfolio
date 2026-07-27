@@ -1,4 +1,4 @@
-import { LuGithub } from "react-icons/lu";
+//import { LuGithub } from "react-icons/lu";
 import { BiLink } from "react-icons/bi";
 import TechIcon from "./helpers/TechIcon";
 import type { Project } from "@/data/projects";
@@ -10,7 +10,7 @@ const ProjectCard = ({
   description,
   techStack,
   liveLink,
-  githubLink,
+ // githubLink,
 }: Project) => {
   return (
     <div className="flex flex-col gap-2 bg-card border border-dashed border-border/80 p-2 rounded-xl w-full overflow-hidden">
@@ -43,9 +43,7 @@ const ProjectCard = ({
           <a href={liveLink} target="_blank">
             <BiLink className="w-4 h-4 text-muted-foreground hover:text-foreground cursor-pointer transition-colors" />
           </a>
-          <a href={githubLink} target="_blank">
-            <LuGithub className="w-4 h-4 text-muted-foreground hover:text-foreground cursor-pointer transition-colors" />
-          </a>
+         
         </div>
         <p className="text-xs font-mono text-muted-foreground hover:text-foreground cursor-pointer transition-colors uppercase tracking-widest">
           <Link to={`/projects/${name.toLowerCase().replace(/\s+/g, "-")}`}>

@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { projects } from "@/data/projects";
 import { ChevronLeft } from "lucide-react";
-import { LuGithub } from "react-icons/lu";
+//import { LuGithub } from "react-icons/lu";
+import { Link } from "react-router-dom";
 import { BiLink } from "react-icons/bi";
 import TechIcon from "@/components/helpers/TechIcon";
 import { useNavigate, useParams } from "react-router-dom";
@@ -44,21 +45,30 @@ const ProjectDetail = () => {
         <FadeIn delay={0.15}>
           <div className="flex flex-wrap gap-3 sm:gap-4">
             <a href={project.githubLink} target="_blank" rel="noreferrer">
-              <Button
+               {/*  <Button
                 variant="outline"
                 className="border border-border border-dashed"
                 size="lg"
               >
-                <LuGithub className="w-4 h-4" />
+               <LuGithub className="w-4 h-4" />
                 View Source
-              </Button>
+              </Button>*/}
             </a>
-            <a href={project.liveLink} target="_blank" rel="noreferrer">
-              <Button size="lg">
-                <BiLink className="w-4 h-4" />
-                Live Demo
-              </Button>
-            </a>
+          {project.hasLiveDemo ? (
+  <a href={project.liveLink} target="_blank" rel="noreferrer">
+    <Button size="lg">
+      <BiLink className="w-4 h-4" />
+      Live Demo
+    </Button>
+  </a>
+) : (
+  <Link to="/demo-unavailable">
+    <Button size="lg">
+      <BiLink className="w-4 h-4" />
+      Live Demo
+    </Button>
+  </Link>
+)}
           </div>
         </FadeIn>
         <FadeIn delay={0.2}>
@@ -86,10 +96,10 @@ const ProjectDetail = () => {
           </div>
         </FadeIn>
         <FadeIn delay={0.3}>
-          <h2 className="mb-4 text-xl font-light tracking-tight sm:text-2xl">
+          <h2 className="  mb-4 text-xl font-light tracking-tight sm:text-2xl">
             About the Project
           </h2>
-          <p className="text-muted-foreground font-light">{project.about}</p>
+          <p className="whitespace-pre-line text-muted-foreground font-light">{project.about}</p>
         </FadeIn>
         <FadeIn delay={0.35}>
           <h2 className="mb-4 text-xl font-light tracking-tight sm:text-2xl">

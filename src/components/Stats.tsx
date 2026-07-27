@@ -80,10 +80,10 @@ const Stats = ({ year: initialYear = 2026 }: StatsProps) => {
         setError(null);
 
         const apiYear = year === currentYear ? "last" : year;
-        const res = await fetch(
-          `https://github-contributions-api.jogruber.de/v4/charanmunur?y=${apiYear}`,
-          { signal: controller.signal },
-        );
+      const res = await fetch(
+  `https://github-contributions-api.jogruber.de/v4/KHMILA-Rania?y=${apiYear}`,
+  { signal: controller.signal },
+);
 
         if (!res.ok) {
           throw new Error("Failed to fetch contribution data");

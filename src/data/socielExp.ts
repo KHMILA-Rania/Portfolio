@@ -9,31 +9,31 @@ export interface Blog {
 
 export const blogs: Blog[] = [
    {
-    title: "National Engineering Degree in Computer Engineering",
+    title: "Tunisian Red Crescent",
     description:
-      "National Engineering Degree in Computer Engineering, specializing in full stack web development",
-    tags: ["Higher Private School of Technologies and Engineering (Tek-Up), Tunisia", "Software engineering"],
-    date: "2025-07-15",
+      "Tunisian Red Crescent participant during a year and a half.",
+    tags: ["Participant", "Red Crescent"],
+    date: "2020-09-11",
     readTime: "",
-    content:""
+    content:"Completed first aid training  \n\nConducted awareness campaigns \n\nOrganized events"
   },
     {
-    title: "Bachelor’s Degree in Computer Science",
+    title: "ANCU El Manar, Tunis, Tunisia (Assiciation Nationale des Clubs Universitaires)",
     description:
-      "Bachelor’s Degree in Computer Science: Software Engineering",
-    tags: ["Faculty of Sciences of Tunis, Tunisia", "Software engineering"],
-    date: "2022-06-12",
+      "Media and Marketing Department member at ANCU.",
+    tags: ["Media&Marketing", "ANCU"],
+    date: "2021-11-12",
     readTime: "",
-    content:""
+    content:"Developed and implemented marketing strategies to achieve organizational objectives \n\nParticipated in succesfull events related to differents themes."
   },
       {
-    title: "High School Diploma",
+    title: "Tunivisions Tek-Up, Tunisia",
     description:
-      "Experimental Sciences High School Diploma",
+      "Event Assistant At Tunivisions club Tek-up during 2 years. ",
     tags: ["Ibn Charaf High School, Zaghouan, Tunisia", "Experimental Sciences"],
-    date: "2019-06-12",
+    date: "2023-12-12",
     readTime: "",
-    content:""
+    content:"Developed event concepts \n\nManaged event logistics \n\nCoordinated with partners and sponsors \n\nHandled attendee registration and guest support \n\nSupported on-site event setup and execution"
   },
  /* {
     title: "How It All Started — My Programming Journey",

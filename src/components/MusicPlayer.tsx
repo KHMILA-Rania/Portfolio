@@ -34,7 +34,7 @@ const MusicIcon = ({
       className="w-12 h-12 rounded-xl overflow-hidden cursor-pointer active:scale-95 transition-all shadow-sm group"
     >
       <img
-        src="/assets/aruarian-dance.webp"
+        src="/assets/bobmarley.jpg"
         alt="Aruarian Dance"
         className={`w-full h-full object-cover transition-transform duration-500 ${
           isPlaying ? "scale-110" : "scale-100 group-hover:scale-105"
@@ -62,7 +62,7 @@ export const MusicPlayer = () => {
     <div className="w-full flex justify-end pr-2">
       <audio
         ref={audioRef}
-        src="/assets/aruarian dance.mp3"
+        src="/assets/bob.mp3"
         loop
         onEnded={() => setIsPlaying(false)}
       />
@@ -79,12 +79,12 @@ export const MusicPlayer = () => {
         <div className="flex flex-col min-w-[130px] justify-center">
           <div className="flex items-center gap-2">
             <span className="text-sm font-light tracking-tight text-foreground truncate">
-              Aruarian Dance
+              No woman no cry
             </span>
             {isPlaying && <MusicBars />}
           </div>
           <span className="text-[11px] text-muted-foreground font-light uppercase tracking-wider">
-            Nujabes
+            Bob Marley
           </span>
         </div>
 

@@ -1,4 +1,4 @@
-import type { Blog } from "@/data/blog";
+import type { Blog } from "@/data/socielExp";
 import { ArrowUpRight, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 

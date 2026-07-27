@@ -27,7 +27,8 @@ const Hero = () => {
           <div className="flex shrink-0 items-center justify-center [will-change:transform,opacity] transform-gpu">
             {/* avatar */}
             <img
-              src={`${import.meta.env.BASE_URL}assets/musashi.svg`}
+              //src={`${import.meta.env.BASE_URL}assets/musashi.svg`}
+              src="/assets/raniaprofil.png"
               alt="profile"
               decoding="async"
               className="block h-35 w-35 shrink-0 rounded-full border-2 border-border object-cover object-center p-1 shadow-sm sm:h-40 sm:w-40"
@@ -63,9 +64,9 @@ const Hero = () => {
 
         <motion.div variants={itemVariants} className="space-y-5 sm:space-y-6">
           <h1 className="max-w-full text-[1.7rem] font-normal tracking-tight leading-tight sm:text-[2.05rem] md:text-[2.15rem]">
-            FullStack Developer -{" "}
+            Software Engineer -{" "}
             <span className="text-[0.95em] font-light text-muted-foreground sm:text-[0.96em]">
-              Learning Systems, Shipping Clean Interfaces.
+              
             </span>
           </h1>
           <p className="text-base font-light leading-7 text-muted-foreground sm:text-lg sm:leading-8">

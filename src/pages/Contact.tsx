@@ -24,14 +24,14 @@ const Contact = () => {
         <div className="flex flex-col gap-10 justify-center">
           <FadeIn delay={0.1}>
             <h1 className="text-3xl font-light tracking-tight sm:text-4xl">
-              Let's connect
+              Let's Make It Happen !
             </h1>
           </FadeIn>
           <FadeIn delay={0.15}>
             <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
-              I'm always open to discussing new projects, creative ideas, or
-              opportunities to be part of your visions. Whether you have a
-              question or just want to say hi, feel free to drop a message!
+             Let's build something great together. I'm always interested in new projects,
+              innovative ideas, and meaningful collaborations. 
+             If you'd like to work together or simply say hello, I'd be happy to hear from you.
             </p>
           </FadeIn>
         </div>

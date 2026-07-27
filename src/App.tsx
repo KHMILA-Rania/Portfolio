@@ -4,8 +4,10 @@ import { FadeIn } from "./components/helpers/FadeIn";
 import { lazy, Suspense } from "react";
 import QuoteSection from "./components/QuoteSection";
 
+import EducationSection from "./components/EducationSection";
+
 const ProjectSection = lazy(() => import("./components/ProjectSection"));
-const BlogSection = lazy(() => import("./components/BlogSection"));
+//const BlogSection = lazy(() => import("./components/BlogSection"));
 const Stats = lazy(() => import("./components/Stats"));
 
 const App = () => {
@@ -32,7 +34,7 @@ const App = () => {
             }
           >
             <FadeIn>
-              <BlogSection />
+              <EducationSection />
             </FadeIn>
           </Suspense>
           <Suspense

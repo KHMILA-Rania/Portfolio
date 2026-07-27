@@ -10,6 +10,7 @@ export interface Project {
   githubLink: string;
   about: string;
   features: string[];
+  hasLiveDemo:Boolean
 }
 
 export const projects: Project[] = [
@@ -19,7 +20,7 @@ export const projects: Project[] = [
     description:
       "Travel management platform that enables users to discover, customize, and book travel experiences while providing administrators with complete control over the platform.",
     about:
-      "A comprehensive full-stack travel agency platform built to simplify travel planning and reservation management. The application allows users to explore trips, sports activities, hotels, featured destinations, and personalized travel experiences while offering a seamless booking process. It also includes a powerful administration dashboard for managing reservations, partner accounts, promotional discounts, travel programs, and overall platform content, delivering an efficient and scalable solution for both customers and administrators.",
+      "A comprehensive full-stack travel agency platform built to simplify travel planning and reservation management. The application allows users to explore trips, sports activities, hotels, featured destinations, and personalized travel experiences while offering a seamless booking process. It also includes a powerful administration dashboard for managing reservations, partner accounts, promotional discounts, travel programs, and overall platform content, delivering an efficient and scalable solution for both customers and administrators. \n\nPS : Developed and delivered by me. The project has since been handed over to the client, and I am no longer responsible for its maintenance or updates.",
     features: [
       "Browse and book trips, sports activities, and hotel reservations.",
       "Explore featured destinations, travel programs, and best-selling offers.",
@@ -29,6 +30,7 @@ export const projects: Project[] = [
       "Comprehensive admin dashboard for managing events, bookings, users, partners, and platform content.",
       "Cloudinary integration for secure image upload and media management.",
       "RESTful API development and testing with Postman.",
+    
      
     ],
     techStack: [
@@ -42,16 +44,17 @@ export const projects: Project[] = [
       projectTech.jwt,
   
     ],
-    liveLink: "https://app.shrtn.fun",
-    githubLink: "https://github.com/CharanMunur/shrtn",
+    liveLink: "https://aviatortravel.tn/",
+    githubLink: "",
+      hasLiveDemo: true,
   },
   {
     name: "electric vehicle charging stations management",
-    imgSrc: "/projects/voltwise.jpeg",
+    imgSrc: "/projects/volt2.jpeg",
     description:
       "A mobile platform for locating, reserving, and managing electric vehicle charging stations in real time.",
     about:
-      "This mobile application enables users to explore nearby electric vehicle charging stations on an interactive map, view detailed station information, and reserve a charging slot with a 30-minute timer. It also includes features for reviewing stations, tracking usage history, submitting feedback or complaints, and improving overall charging experience. Partners can manage their stations, while administrators have full control with advanced analytics dashboards.",
+      "This mobile application enables users to explore nearby electric vehicle charging stations on an interactive map, view detailed station information, and reserve a charging slot with a 30-minute timer. It also includes features for reviewing stations, tracking usage history, submitting feedback or complaints, and improving overall charging experience. Partners can manage their stations, while administrators have full control with advanced analytics dashboards. \n\nPS: This project was developed as an MVP (Minimum Viable Product) for initial user testing and feedback. As it was not the final public release, no live demo is available.",
     features: [
       "Interactive map showing available charging stations with details for each stations.",
       "30-minute reservation system with timer",
@@ -68,61 +71,93 @@ export const projects: Project[] = [
       projectTech.vite,
       projectTech.reactnative,
     ],
-    liveLink: "https://markdown-editor-v1.netlify.app/",
-    githubLink: "https://github.com/CharanMunur/markdown-editor",
+    liveLink: "",
+    githubLink: "",
+    hasLiveDemo: false,
   },
   {
-    name: "Shadcn Scaffold",
-    imgSrc: "/projects/shadcn-scaffold.png",
-    description:
-      "An automated CLI tool that instantly bootstraps production-ready React applications with Vite, TypeScript, Tailwind CSS v4, and shadcn/ui.",
-    about:
-      "Built to eliminate boilerplate fatigue. shadcn-scaffold is an interactive command-line interface that completely automates modern React project setups. From configuring complex path aliases and injecting dark mode providers, to orchestrating heavy dependencies—this tool condenses hours of manual configuration into a single, lightning-fast terminal command.",
-    features: [
-      "Interactive terminal UI built with React Ink for dynamic package selection",
-      "Zero-config integration of Tailwind CSS v4 and shadcn/ui base components",
-      "Injects fully functional Theme Providers and custom Mode Toggles",
-      "Dynamically patches tsconfig.json and Vite settings to fix path aliasing bugs",
-      "Orchestrates child processes (Execa) for reliable dependency resolution",
-      "Published globally to NPM for instant execution via npx or bunx",
-    ],
-    techStack: [
-      projectTech.nodejs,
-      projectTech.typescript,
-     
-      projectTech.commander,
-      projectTech.execa,
-    ],
-    liveLink: "https://www.npmjs.com/package/shadcn-scaffold",
-    githubLink: "https://github.com/CharanMunur/shadcn-scaffold",
-  },
+  name: "ToyRoom Rome",
+  imgSrc: "/projects/toy1.png",
+  description:
+    "A modern event management platform for discovering Rome-based events, exploring galleries, and handling online reservations through an intuitive web experience.",
+  about:
+    "ToyRoom Rome is a full-stack web application designed to showcase and manage events in Rome. Built from scratch, the platform provides visitors with an engaging experience to explore upcoming events, browse galleries, and send inquiries through a contact form. An integrated admin dashboard allows authorized users to manage events, upload gallery content, and monitor customer messages efficiently.",
+  features: [
+    "Dynamic events showcase ",
+    "Online contact form for event participation",
+    "Gallery management with cloud-based image uploads",
+    "Contact form allowing visitors to send inquiries directly",
+    "Admin authentication system with protected management features",
+    "Admin dashboard to create, update, and delete events and gallery items",
+    "Responsive design optimized for different screen sizes",
+  ],
+  techStack: [
+    projectTech.react,
+    projectTech.vite,
+    projectTech.nodejs,
+    projectTech.mongodb,
+
+  ],
+  liveLink: "https://toyroom-rome.netlify.app/",
+  githubLink: "",
+    hasLiveDemo: true,
+},
   {
-    name: "SuperTodo",
-    imgSrc: "/projects/supertodo.png",
-    description:
-      "A full-featured todo app with priorities, due dates, subtasks, and date-grouped views. Animated with Framer Motion and styled with shadcn/ui for a polished experience.",
-    about:
-      "A personal productivity app built to go beyond a basic todo list. It supports subtasks, priority levels, due dates, and groups tasks by date for a cleaner overview. Built with React, shadcn/ui, and Framer Motion, with a heavy focus on animations and a polished user experience.",
-    features: [
-      "Create, edit, and delete tasks with subtask support and completion tracking",
-      "Priority levels (High, Medium, Low) with visual indicators",
-      "Due date picker with date-grouped task views",
-      "Filter by All, Pending, and Completed — sort by status, priority, or date",
-      "Smooth Framer Motion animations on task add, complete, and delete",
-      "Dark and light theme toggle with persistent preference",
-      "Data persisted via localStorage — survives page refresh",
-    ],
-    techStack: [
-      projectTech.react,
-      projectTech.javascript,
-      projectTech.tailwindcss,
-      projectTech.vite,
-      projectTech.motion,
-      projectTech.shadcnui,
-    ],
-    liveLink: "https://supertodo-v1.netlify.app/",
-    githubLink: "https://github.com/CharanMunur/supertodo",
-  },
+  name: "Vitaneuf",
+  imgSrc: "/projects/vita.png",
+  description:
+    "A modern corporate website developed for Vitaneuf to showcase its services, projects, and company expertise with a responsive and elegant user experience.",
+  about:
+    "Vitaneuf is a professional company website built to strengthen the brand's online presence while providing visitors with a seamless browsing experience. The platform highlights the company's services, achievements, and contact information through a modern interface, optimized performance, and responsive design. The website focuses on clarity, accessibility, and maintainability, making it easy for administrators to update content as the business evolves. \n\nPS: Developed and delivered by me. The project has since been handed over to the client, and I am no longer responsible for its maintenance or updates.",
+  features: [
+    "Modern and responsive user interface optimized for all devices",
+    "Professional presentation of company services and expertise",
+    "Project and gallery sections showcasing completed work",
+    "Interactive contact form for customer inquiries",
+    "SEO-friendly structure and optimized page performance",
+    "Clean architecture for easy maintenance and future scalability",
+    "Admin dashboard to manage products and gatecories.",
+    "REST API integration for dynamic content management",
+  ],
+  techStack: [
+    projectTech.react,
+    projectTech.vite,
+    projectTech.nodejs,
+    projectTech.mongodb,
+  projectTech.jwt,
+    projectTech.tailwindcss,
+  ],
+  liveLink: "https://vitaneuf.tn/",
+  githubLink: "",
+    hasLiveDemo: true,
+},
+{
+  name: "Fotoderma Alliance",
+  imgSrc: "/projects/foto.png",
+  description:
+    "A modern medical website developed for Fotoderma Alliance to present dermatology services, specialists, and patient resources through a clean and professional interface.",
+  about:
+    "Fotoderma Alliance is a healthcare-focused website designed to establish a strong online presence for a dermatology center. The platform provides detailed information about treatments, medical specialists, and educational resources while offering clients an intuitive way to explore services and get in touch. Built with performance, accessibility, and responsiveness in mind, the website delivers a seamless experience across all devices and reflects the professionalism of the medical practice.",
+  features: [
+    "Modern and responsive medical website design",
+    "Comprehensive presentation of dermatology treatments and services",
+    "Dedicated pages for doctors, treatments, and patient information",
+    "Interactive contact and appointment request forms",
+    "SEO-optimized structure for improved online visibility",
+    "Reusable component architecture for easy maintenance and future expansion",
+  ],
+  techStack: [
+    projectTech.react,
+    projectTech.vite,
+    projectTech.nodejs,
+    projectTech.mongodb,
+    projectTech.tailwindcss,
+ 
+  ],
+  liveLink: "https://www.fotodermaalliance.com/",
+  githubLink: "",
+    hasLiveDemo: true,
+},
 ];
 
 // End of projects data
