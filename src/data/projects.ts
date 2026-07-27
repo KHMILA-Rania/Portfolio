@@ -158,6 +158,32 @@ export const projects: Project[] = [
   githubLink: "",
     hasLiveDemo: true,
 },
+{
+  name: "Cabinet de dermatologie",
+  imgSrc: "/projects/drmnaja.png",
+  description:
+    "A modern healthcare website  to showcase medical services, specialties, and patient information through a clean, responsive, and professional user experience.",
+  about:
+    "This website a professional medical website built to strengthen the online presence of a healthcare practice. The platform presents medical specialties, treatment information, and clinic details in a clear and accessible way while allowing patients to easily navigate the available services and contact the clinic. Designed with responsiveness, performance, and usability in mind, the website offers a seamless browsing experience across all devices and reflects the trust and professionalism expected from a modern healthcare provider.",
+  features: [
+    "Modern and fully responsive healthcare website",
+    "Dedicated pages for medical services and specialties",
+    "Professional presentation of the doctor's profile and expertise",
+    "Interactive contact section for patient inquiries",
+    "Optimized navigation with reusable React components",
+    "Fast-loading and SEO-friendly architecture",
+  ],
+  techStack: [
+    projectTech.react,
+    projectTech.vite,
+    projectTech.nodejs,
+    projectTech.mongodb,
+    projectTech.tailwindcss,
+  ],
+  liveLink: "https://drmnaja.netlify.app/",
+  githubLink: "",
+  hasLiveDemo: true,
+},
 ];
 
 // End of projects data
